@@ -1,0 +1,145 @@
+.header {
+  background-color: var(--color-background);
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(130, 123, 44, 0.633);
+  position: sticky;
+  z-index: 30;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.languageSelector button {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.activeLang {
+  text-decoration: underline;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+/* Nav padrão desktop */
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  border-radius: 4px; /* pra deixar o fundo arredondado */
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  padding: 0.25rem 0.5rem; /* para aumentar a área de clique e o hover */
+  border-radius: 4px; /* pra deixar o fundo arredondado */
+  transition: background-color 0.3s ease;
+
+}
+
+.nav a:hover {
+  background-color: rgba(130, 123, 44, 0.3); /* muda a cor do fundo no hover */
+  color: var(--color-text); /* pode mudar a cor do texto se quiser */
+}
+
+.themeToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: flex;
+  color: var(--color-text);
+}
+
+/* Botão hamburger */
+.hamburger {
+  display: none; /* só aparece no mobile */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 40;
+}
+
+.bar {
+  width: 24px;
+  height: 2px;
+  background-color: rgb(126, 122, 122);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: fixed;
+    top: 45px; /* ajuste conforme seu header */
+    right: 0;
+    background-color: rgba(151, 145, 114, 0.953);
+    height: calc(100vh - 60px);
+    width: 220px;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 5px rgba(130, 123, 44, 0.633);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 35;
+  }
+
+  .nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 700;
+  padding: 0.25rem 0.5rem; /* para aumentar a área de clique e o hover */
+  border-radius: 4px; /* pra deixar o fundo arredondado */
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid;
+  text-decoration: double;
+
+}
+
+  .nav.navOpen {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .themeToggle {
+    font-size: 1.5rem;
+  }
+}

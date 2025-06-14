@@ -1,0 +1,58 @@
+/* styles/PostCard.module.css */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.image {
+  width: 100%;
+  height: 200px; /* altura fixa */
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.content {
+  padding: 1.25rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.content p {
+  flex-grow: 1; /* para empurrar o link para baixo */
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.readMore {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+}
+
+.readMore:hover {
+  color: #0051a3;
+  text-decoration: underline;
+}
