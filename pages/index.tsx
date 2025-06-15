@@ -1,13 +1,12 @@
 import Layout from '../components/Layout';
 import styles from '../styles/HomePage.module.css';
+import posts from '../data/posts.json';  // import JSON direto
+
+
 
 export default function Home() {
-  const artigoMaisAcessado = {
-    title: 'O Poder da Fé',
-    excerpt: 'Entenda como a fé transforma vidas e gera esperança...',
-    image: '/images/thumbnail/poder-da-fe.jpg',
-    slug: 'o-poder-da-fe',
-  };
+
+  const artigoMaisAcessado = posts[0];
 
   const videos = [
     {
@@ -64,7 +63,7 @@ export default function Home() {
         />
         <h2>{artigoMaisAcessado.title}</h2>
         <p>{artigoMaisAcessado.excerpt}</p>
-        <a href={`#`} className={styles.linkLerMais}>
+        <a href={`/posts/${artigoMaisAcessado.slug}`} className={styles.linkLerMais}>
           Ler mais
         </a>
       </section>

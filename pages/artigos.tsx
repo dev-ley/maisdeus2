@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
 import PostCard from '../components/PostCard';
-import { posts, Post } from '../data/posts';
+import posts from '../data/posts.json';  // import JSON direto
+import { Post } from '../types/post' ;
 
 const POSTS_PER_PAGE = 3;
 

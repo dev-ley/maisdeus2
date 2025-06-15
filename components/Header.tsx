@@ -93,7 +93,7 @@ const Header = () => {
       <div className={styles.container}>
         <div className={styles.left}>
           <Link href="/" className={styles.logo} onClick={closeMenu}>
-            Mais Deus
+            Mas Deus
           </Link>
           {/* Linguagem comentada por enquanto
           <div className={styles.languageSelector}>

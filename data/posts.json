@@ -1,0 +1,77 @@
+[
+  {
+    "id": "post1",
+    "slug": "post1",
+    "title": "Post 2",
+    "excerpt": "Resumo do post 2...",
+    "content": "Conteúdo completo do post 2",
+    "date": "2025-06-10",
+    "image": "/images/thumbnailpost/hasan-almasi-dSsDSLB-YYw-unsplash.jpg",
+    "author": {
+      "name": "Autor 2",
+      "bio": "Bio do Autor 2",
+      "avatarUrl": "/images/thumbnailpost/jonathan-simcoe-pSjwUXBMnlc-unsplash.jpg"
+    },
+    "category": "Desenvolvimento"
+  },
+  {
+    "id": "post2",
+    "slug": "post2",
+    "title": "Post 2",
+    "excerpt": "Resumo do post 2...",
+    "content": "Conteúdo completo do post 2",
+    "date": "2025-06-10",
+    "image": "/images/thumbnailpost/jonathan-simcoe-pSjwUXBMnlc-unsplash.jpg",
+    "author": {
+      "name": "Autor 2",
+      "bio": "Bio do Autor 2",
+      "avatarUrl": "/images/thumbnailpost/jonathan-simcoe-pSjwUXBMnlc-unsplash.jpg"
+    },
+    "category": "Desenvolvimento"
+  },
+  {
+    "id": "post3",
+    "slug": "post3",
+    "title": "Post 3",
+    "excerpt": "Resumo do post 3...",
+    "content": "Conteúdo completo do post 3",
+    "date": "2025-06-08",
+    "image": "/images/thumbnailpost/kat-kelley-X9-PQt7IPvs-unsplash.jpg",
+    "author": {
+      "name": "Autor 3",
+      "bio": "Bio do Autor 3",
+      "avatarUrl": "/images/thumbnailpost/kat-kelley-X9-PQt7IPvs-unsplash.jpg"
+    },
+    "category": "Design"
+  },
+  {
+    "id": "post4",
+    "slug": "post4",
+    "title": "Post 4",
+    "excerpt": "Resumo do post 4...",
+    "content": "Conteúdo completo do post 4",
+    "date": "2025-06-05",
+    "image": "/images/thumbnailpost/rod-long-VHS_CmxFBGI-unsplash.jpg",
+    "author": {
+      "name": "Autor 4",
+      "bio": "Bio do Autor 4",
+      "avatarUrl": "/images/thumbnailpost/rod-long-VHS_CmxFBGI-unsplash.jpg"
+    },
+    "category": "Marketing"
+  },
+  {
+    "id": "post5",
+    "slug": "post5",
+    "title": "Post 5",
+    "excerpt": "Resumo do post 5...",
+    "content": "Conteúdo completo do post 5",
+    "date": "2025-06-01",
+    "image": "/images/thumbnailpost/yash-bhardwaj-KK41OcTfllc-unsplash.jpg",
+    "author": {
+      "name": "Autor 5",
+      "bio": "Bio do Autor 5",
+      "avatarUrl": "/images/thumbnailpost/yash-bhardwaj-KK41OcTfllc-unsplash.jpg"
+    },
+    "category": "Negócios"
+  }
+]

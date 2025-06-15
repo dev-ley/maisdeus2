@@ -1,0 +1,138 @@
+.floatingButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.floatingButton:hover {
+  background-color: #005bb5;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.postForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.postForm input,
+.postForm textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+.postForm input:focus,
+.postForm textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.postForm button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.postForm button:hover {
+  background-color: #005bb5;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 998;
+
+  /* Permitir scroll se o conteúdo for maior que a tela */
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.postForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  
+  /* Limitar altura para evitar corte */
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  
+  box-sizing: border-box;
+}
+
+
+
+.postForm textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.postForm textarea {
+  min-height: 120px;       /* altura mínima legal pra digitar */
+  max-height: 250px;       /* limita para não ficar gigante */
+  padding: 0.8rem;         /* espaçamento interno melhor */
+  resize: vertical;        /* só permite redimensionar verticalmente */
+  font-size: 1rem;         /* tamanho da fonte consistente */
+  line-height: 1.4;        /* espaçamento entre linhas pra leitura */
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.2s ease;
+}
